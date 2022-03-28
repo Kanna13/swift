@@ -1,0 +1,5 @@
+class Heroes: Character{
+    
+
+    
+}
