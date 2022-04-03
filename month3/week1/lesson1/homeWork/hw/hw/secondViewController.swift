@@ -11,18 +11,25 @@ class secondViewController: UIViewController {
 
     @IBOutlet weak var renameText: UILabel!
     
+    @IBOutlet weak var emailField: UITextField!
+    
+    @IBOutlet weak var passwordFeild: UITextField!
     
     
+    var users: [String: String] = ["shifu@gmail.com": "123", "ios@mail.ru": "321"]
     
     @IBAction func makeRegister(_ sender: UIButton) {
-        renameText.text = "Succeed"
-        
+        if emailField.text != ""{
+            users.updateValue(passwordFeild.text!, forKey: emailField.text!)
+            print(users)
+            renameText.text = "Succeed!"
+        }
     }
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         renameText.text = ""
+
 
         // Do any additional setup after loading the view.
     }

@@ -27,7 +27,7 @@ class ViewController: UIViewController {
     }
     
     
-    let users: [String: String] = ["shifu@gmail.com": "123", "ios@mail.ru": "321"]
+    var users: [String: String] = ["shifu@gmail.com": "123", "ios@mail.ru": "321"]
     
     
     

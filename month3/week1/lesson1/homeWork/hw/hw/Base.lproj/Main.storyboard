@@ -130,6 +130,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="EPk-RC-6G7"/>
                     <connections>
+                        <outlet property="emailField" destination="llo-tb-Dq8" id="TPA-LG-kIU"/>
+                        <outlet property="passwordFeild" destination="yg8-tn-gc4" id="cDI-fx-vel"/>
                         <outlet property="renameText" destination="Ms4-ip-IRg" id="KC7-SM-0Hn"/>
                     </connections>
                 </viewController>
