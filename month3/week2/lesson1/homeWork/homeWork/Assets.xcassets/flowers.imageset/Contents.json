@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "amy-humphries-S5wUMrXdq1M-unsplash.jpg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "amy-humphries-S5wUMrXdq1M-unsplash-1.jpg",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "amy-humphries-S5wUMrXdq1M-unsplash-2.jpg",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
