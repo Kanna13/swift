@@ -20,7 +20,6 @@ class ViewController: UIViewController {
         sender.setImage(UIImage(named: "1"), for: .normal)
     }
 
-    
     private lazy var gameField: UIView = {
         let view = UIView()
         view.backgroundColor = .separator
@@ -58,7 +57,8 @@ class ViewController: UIViewController {
     private lazy var timerField: UILabel = {
         
         let view = UILabel()
-        view.text = "001"
+        var counter = 100
+        view.text = String(counter)
         view.font = UIFont.systemFont(ofSize: 48)
         view.backgroundColor = .white
         view.textAlignment = .center
