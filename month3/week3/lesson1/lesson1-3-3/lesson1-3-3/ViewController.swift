@@ -9,6 +9,7 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    
     var posts: [PostModel] = [PostModel(avatar: UIImage(named: "man")!, userName: "mrbeast", postImage: UIImage(named: "car")!, description: "Lorem Ipsum", likeCounter: "2"),
                             PostModel(avatar: UIImage(named: "boy")!, userName: "eeoneguy", postImage: UIImage(named: "flowers")!, description: "Lorem Ipsum", likeCounter: "3"),
                             PostModel(avatar: UIImage(named: "user")!, userName: "shifucall", postImage: UIImage(named: "car")!, description: "Lorem Lorem Ipsum Ipsum", likeCounter: "5")]
@@ -28,6 +29,7 @@ class ViewController: UIViewController {
     }
 }
 
+
 extension ViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -41,11 +43,10 @@ extension ViewController: UITableViewDataSource {
         cell.userAvatar.image = posts[indexPath.row].avatar
         cell.userName.text = posts[indexPath.row].userName
         cell.postImage.image = posts[indexPath.row].postImage
-        cell.likeButton.setImage(UIImage(systemName: "heart"), for: .normal)
         cell.likesCounter.text = posts[indexPath.row].likeCounter
         cell.postDescription.text = posts[indexPath.row].description
         
-        
+
         return cell
         
     }
